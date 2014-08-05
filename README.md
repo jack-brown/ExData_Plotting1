@@ -1,3 +1,7 @@
+## Comments on Course Project
+For this project, I took the minimalist approach as the philosophy of exploratory data analysis is for personal learning.  Thus, the graphics I created are only what the assignment required and comments in the scripts are a bare minimum - just so I know how to recreate everything again should I need to.
+
+## ----- Original Readme Contents -----
 ## Introduction
 
 This assignment uses data from

@@ -17,10 +17,11 @@ rownames(pcdata) <- NULL
 #Plot 3
 png("./ExploratoryDataAnalysis/Project1/plot3.png", width = 480, height = 480)
 par(pch = ".")
+#create the initial plot with the black line drawn (with type ='l')
 with(pcdata, plot(Timestamp, Sub_metering_1, type = 'l',
                   xlab = '', ylab = 'Energy sub metering'))
-lines(pcdata$Timestamp, pcdata$Sub_metering_3, col = 'blue')
-lines(pcdata$Timestamp, pcdata$Sub_metering_2, col = 'red')
+lines(pcdata$Timestamp, pcdata$Sub_metering_3, col = 'blue')  #draw the blue line on the graph
+lines(pcdata$Timestamp, pcdata$Sub_metering_2, col = 'red')   #draw the red line on the graph
 legend('topright', lty = 1 , col = c('black', 'red', 'blue'),
        legend = c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'))
 #dev.copy(png, file = "./ExploratoryDataAnalysis/Project1/plot3.png")

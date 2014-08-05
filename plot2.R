@@ -18,6 +18,6 @@ rownames(pcdata) <- NULL
 par(pch = ".")
 plot(pcdata$Timestamp,pcdata$Global_active_power, xlab = '',
      ylab = 'Global Active Power (kilowatts)')
-lines(pcdata$Timestamp,pcdata$Global_active_power)
+lines(pcdata$Timestamp,pcdata$Global_active_power)  #make a line graph
 dev.copy(png, file = "./ExploratoryDataAnalysis/Project1/plot2.png")
 dev.off()
